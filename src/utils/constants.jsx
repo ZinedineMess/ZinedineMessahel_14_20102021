@@ -13,6 +13,25 @@ const INITIAL_STATE_EMPLOYEE = {
     department: departments[0].label,
 }
 
+const ADD_EMPLOYEE = 'ADD_EMPLOYEE';
+
+const MONTHS = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+];
+
 export { 
     INITIAL_STATE_EMPLOYEE, 
+    ADD_EMPLOYEE,
+    MONTHS, 
 };
