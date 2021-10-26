@@ -1,9 +1,10 @@
+import Table from 'components/DataTable/DataTable';
 import React from 'react';
 
 function CurrentEmployee() {
     return (
         <div>
-            Salut
+            <Table />
         </div>
     )
 }
