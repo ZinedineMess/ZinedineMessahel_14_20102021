@@ -1,4 +1,5 @@
 import 'components/Form/Form.css';
+import CreateDatePicker from 'components/DatePicker/DatePicker';
 import { departments } from 'assets/data/departments';
 import DropDown from 'components/DropDown/DropDown';
 import { INITIAL_STATE_EMPLOYEE } from 'utils/constants';
@@ -33,7 +34,9 @@ const Form = () => {
                 <label htmlFor="lastName">Last Name</label>
                 <Input inputType='text' inputName='lastName' newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
                 <label htmlFor="dateOfBirth">Date of Birth</label>
+                <CreateDatePicker inputName='dateOfBirth' newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
                 <label htmlFor="startDate">Start Date</label>
+                <CreateDatePicker inputName='startDate' newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
                 <fieldset className="address">
                     <legend>Address</legend>
                     <label htmlFor="street">Street</label>
