@@ -3,9 +3,13 @@ import React from 'react';
 
 const CurrentEmployee = () => {
     return (
-        <div>
+        <section className='containerWrapper'>
+            <article className='formHeader'>
+                <h2>New Employee</h2>
+            </article>
+            <span className='lineForm'/>
             <Table />
-        </div>
+        </section>
     );
 };
 
