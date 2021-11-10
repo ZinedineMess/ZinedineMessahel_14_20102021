@@ -1,7 +1,7 @@
 import Form from 'components/Form/Form';
 import React from 'react';
 
-function CreateEmployee() {
+const CreateEmployee = () => {
     return (
         <main>
             <Form />

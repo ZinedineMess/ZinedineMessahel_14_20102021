@@ -1,11 +1,11 @@
-import DatePicker from "react-datepicker";
-import { FaRegHandPointDown } from "react-icons/fa";
-import { getMonth, getYear } from "date-fns";
+import DatePicker from 'react-datepicker';
+import { FaRegHandPointDown, FaChevronCircleLeft, FaChevronCircleRight } from 'react-icons/fa';
+import { getMonth, getYear } from 'date-fns';
 import { MONTHS } from 'utils/constants';
 import PropTypes from 'prop-types';
-import range from "lodash/range";
+import range from 'lodash/range';
 import React, { Fragment } from 'react';
-import "react-datepicker/dist/react-datepicker.css";
+import 'react-datepicker/dist/react-datepicker.css';
 
 const CreateDatePicker = props => {
     const YEARS = range(1920, getYear(new Date()) + 1, 1);
@@ -22,8 +22,8 @@ const CreateDatePicker = props => {
                     prevMonthButtonDisabled,
                     nextMonthButtonDisable,
                 }) => (
-                <div className="date-picker__header">
-                    <button onClick={decreaseMonth} disabled={prevMonthButtonDisabled}>{'<'}</button>
+                <div className='date-picker__header'>
+                    <button type='button' onClick={decreaseMonth} disabled={prevMonthButtonDisabled}><FaChevronCircleLeft /></button>
                     <select
                         value={MONTHS[getMonth(date)]}
                         onChange={({ target: { value } }) => changeMonth(MONTHS.indexOf(value))}>
@@ -42,7 +42,7 @@ const CreateDatePicker = props => {
                             </option>
                         ))};
                     </select>
-                    <button onClick={increaseMonth} disabled={nextMonthButtonDisable}>{'>'}</button>
+                    <button type='button' onClick={increaseMonth} disabled={nextMonthButtonDisable}><FaChevronCircleRight /></button>
                 </div>
             )}
                 todayButton={<FaRegHandPointDown />}
@@ -58,12 +58,12 @@ const CreateDatePicker = props => {
             />
         </Fragment>
     );
-}
+};
 
 CreateDatePicker.propTypes = {
     newEmployee : PropTypes.object.isRequired,
     inputName : PropTypes.string.isRequired,
     setNewEmployee : PropTypes.func.isRequired,
-}
+};
 
 export default CreateDatePicker;

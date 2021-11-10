@@ -1,0 +1,95 @@
+.line {
+    background-color: rgba(255, 255, 255, 0.3);
+    height: .125rem;
+    margin: auto auto 2rem;
+    width: 70%;
+}
+
+.privacyPolicy {
+    color: #F5F4F2;
+    cursor: pointer;
+}
+
+.sideBar.showSideBar {
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    box-shadow: .3125rem .3125rem .625rem #0000002e;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh- 5rem - 0rem);
+    justify-content: space-evenly;
+    left: 0;
+    overflow: hidden;
+    padding-top: 2rem;
+    position: relative;
+    top: 3.4rem;
+    width: 15%;
+    z-index: 4200;
+}
+
+.sideBarHeader {
+    color: #F5F4F2;
+    text-align: center;
+    text-decoration: none;
+}
+
+.sideBarInfoUser,
+.sideBarNavLink {
+    align-items: center;
+    color: #F5F4F2;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.sideBarInfoUser:hover,
+.sideBarNavLink:hover {
+    background-color: #000;
+    border-radius: .625rem;
+}
+
+.sideBarLogo {
+    height: 3.125rem;
+    width: 3.125rem;
+}
+
+.sideBarMenu {
+    width: 100%;
+}
+
+.sideBarNav {
+    padding: 0;
+}
+
+.sideBarOverlay.hideOverlay,
+.sideBar.hideSideBar {
+    display: none;
+}
+
+.sideBarOverlay.showOverlay {
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 22040;
+}
+
+.sideBarUserImg {
+    height: 1.875rem;
+    width: 1.875rem;
+}
+
+.sideBarUserName {
+    color: #F5F4F2;
+    text-decoration: none;
+}
+
+.sideNavBarFooter {
+    color: #F5F4F2;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+    text-align: center;
+}

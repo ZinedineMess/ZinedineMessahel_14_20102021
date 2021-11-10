@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import GlobalState from 'context/GlobalState';
-import Header from 'components/Header/Header';
+import Nav from 'components/Nav/Nav';
 import React from 'react';
 import { routes } from 'router/routes';
 
@@ -8,8 +8,8 @@ const App = () => {
   return (
     <GlobalState>
       <Router>
-        <div className="router-container">
-          <Header />
+        <div className='router-container'>
+          <Nav />
             <Switch>
               {routes.map((route, i) => (
                 <Route
@@ -24,6 +24,6 @@ const App = () => {
       </Router>
     </GlobalState>
   );
-}
+};
 
 export default App;

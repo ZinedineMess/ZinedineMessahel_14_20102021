@@ -1,0 +1,71 @@
+.badgeMessNotif {
+    right: 7.5rem;
+}
+
+.badgeMessNotif,
+.badgeNotif {
+    background-color: #dc3545;
+    border-radius: .3125rem;
+    color: #F5F4F2;
+    font-size: .7rem;
+    padding: .125rem .25rem;
+    position: absolute;
+    top: .5rem;
+    transition: .3s;
+}
+
+.badgeNotif {
+    right: 4.0625rem;
+}
+
+.header {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: .3125rem .3125rem .625rem #0000002e;
+    color: #F5F4F2;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.mainNavBar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navBarIcon {
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.navBarLogo {
+    height: 2.8125rem;
+    left: 48%;
+    position: absolute;
+    top: .3125rem;
+    transition: .3s;
+    width: 2.8125rem;
+}
+
+.navBarLogo:hover,
+.navBarIcon:hover,
+.navBarLink:hover,
+.badgeMessNotif:hover,
+.badgeNotif:hover,
+.navBarFullScreen:hover {
+    transform: scale(1.09);
+}
+
+.navBarRight {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.navBarRightItem {
+    margin-right: 2rem;
+    transition: .3s;
+}

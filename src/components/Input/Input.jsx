@@ -17,13 +17,13 @@ const Input = props => {
             }}
         />
     );
-}
+};
 
 Input.propTypes = {
     inputName : PropTypes.string.isRequired,
     inputType : PropTypes.string.isRequired,
     newEmployee : PropTypes.object.isRequired,
     setNewEmployee : PropTypes.func.isRequired,
-}
+};
 
 export default Input;

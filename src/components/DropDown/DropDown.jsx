@@ -18,13 +18,13 @@ const DropDown = props => {
             }}
         />
     );
-}
+};
 
 DropDown.propTypes = {
     options : PropTypes.array.isRequired,
     newEmployee : PropTypes.object.isRequired,
     inputName : PropTypes.string.isRequired,
     setNewEmployee : PropTypes.func.isRequired,
-}
+};
 
 export default DropDown;

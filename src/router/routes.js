@@ -1,16 +1,10 @@
-import CreateEmployee from "pages/CreateEmployee/CreateEmployee";
-import CurrentEmployee from "pages/CurrentEmployee/CurrentEmployee";
-import Error from "pages/Error/Error";
-import Home from "pages/Home/Home";
+import CreateEmployee from 'pages/CreateEmployee/CreateEmployee';
+import CurrentEmployee from 'pages/CurrentEmployee/CurrentEmployee';
+import Error from 'pages/Error/Error';
 
 export const routes = [
     {
         path: '/',
-        exact: true,
-        component: Home
-    },
-    {
-        path: '/new-employee',
         exact: true,
         component: CreateEmployee
     },

@@ -1,4 +1,4 @@
-import 'components/Form/Form.css';
+import 'components/Form/Form.css'; 
 import CreateDatePicker from 'components/DatePicker/DatePicker';
 import { departments } from 'assets/data/departments';
 import DropDown from 'components/DropDown/DropDown';
@@ -12,7 +12,6 @@ const Form = () => {
     const [newEmployee, setNewEmployee] = useState(INITIAL_STATE_EMPLOYEE);
     const [errorMessage, setErrorMessage] = useState('');
     const context = useContext(EmployeeContext);
-
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -27,37 +26,81 @@ const Form = () => {
         }
         setErrorMessage('');
         context.addEmployeeToList(newEmployee, setErrorMessage);
-    }
+        setNewEmployee(INITIAL_STATE_EMPLOYEE);
+    };
 
     return (
-        <section className="container">
-            <form action="#" id="createEmployee" onSubmit={handleSubmit}>
-                <label htmlFor="firstName">First Name</label>
-                <Input inputType='text' inputName='firstName' newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
-                <label htmlFor="lastName">Last Name</label>
-                <Input inputType='text' inputName='lastName' newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
-                <label htmlFor="dateOfBirth">Date of Birth</label>
-                <CreateDatePicker inputName='dateOfBirth' newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
-                <label htmlFor="startDate">Start Date</label>
-                <CreateDatePicker inputName='startDate' newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
-                <fieldset className="address">
-                    <legend>Address</legend>
-                    <label htmlFor="street">Street</label>
-                    <Input inputType='text' inputName='street' newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
-                    <label htmlFor="city">City</label>
-                    <Input inputType='text' inputName='city' newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
-                    <label htmlFor="state">State</label>
-                    <DropDown inputName='state' options={statesOfUSA} newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
-                    <label htmlFor="zip-code">Zip Code</label>
-                    <Input inputType='text' inputName='zipCode' newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
+        <main className='containerWrapper'>
+            <section className='formHeader'>
+                <h2>New Employee</h2>
+            </section>
+            <div className='lineForm'/>
+            <form action='#' id='createEmployee' onSubmit={handleSubmit} className='form'>
+                <fieldset className='fieldSetEmployee'> 
+                    <legend>Employee</legend> 
+                    <div className='formGroup'>
+                        <div className='formGroupItems'>
+                            <label htmlFor='firstName'>First Name</label>
+                            <Input inputType='text' inputName='firstName' newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
+                        </div>
+                        <div className='formGroupItems'>
+                            <label htmlFor='lastName'>Last Name</label>
+                            <Input inputType='text' inputName='lastName' newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
+                        </div>
+                    </div>
+                    <div className='formGroup'>
+                        <div className='formGroupItems'>
+                            <label htmlFor='dateOfBirth'>Date of Birth</label>
+                            <CreateDatePicker inputName='dateOfBirth' newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
+                        </div>
+                        <div className='formGroupItems'>
+                            <label htmlFor='startDate'>Start Date</label>
+                            <CreateDatePicker inputName='startDate' newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
+                        </div>
+                    </div>
                 </fieldset>
-                <label htmlFor="department">Department</label>
-                <DropDown inputName='department' options={departments} newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
-                <span className="errorMessage">{errorMessage}</span>
-                <button className="btn-submit" type="submit">Save</button>
+                <fieldset className='fieldSetAddress'>
+                    <legend>Address</legend> 
+                    <div className='formGroup'>
+                        <div className='formGroupItems'>
+                            <label htmlFor='street'>Street</label>
+                            <Input inputType='text' inputName='street' newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
+                        </div>
+                        <div className='formGroupItems'>
+                            <label htmlFor='city'>City</label>
+                            <Input inputType='text' inputName='city' newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
+                        </div>
+                    </div>
+                    <div className='formGroup'>
+                        <div className='formGroupItems'>
+                            <label htmlFor='state'>State</label>
+                            <DropDown inputName='state' options={statesOfUSA} newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
+                        </div>
+                        <div className='formGroupItems'>
+                            <label htmlFor='zip-code'>Zip Code</label>
+                            <Input inputType='text' inputName='zipCode' newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset className='fieldSetDepartment'>
+                    <div className='formGroup'>
+                        <div className='formGroupItems'>
+                            <label htmlFor='department'>Department</label>
+                            <DropDown inputName='department' options={departments} newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
+                        </div>
+                    </div>
+                </fieldset>
+                <div className='fieldSetSumbit'>
+                    <div className='formGroup'>
+                        <div className='formSubmitDiv'>
+                            <button type='submit' className='buttonDefault'>Save</button>
+                        </div>
+                    </div>
+                </div>
+                <span className='errorMessage'>{errorMessage}</span>
             </form>
-        </section>
+        </main>
     );
-}
+};
 
 export default Form;

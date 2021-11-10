@@ -16,18 +16,18 @@ const INITIAL_STATE_EMPLOYEE = {
 const ADD_EMPLOYEE = 'ADD_EMPLOYEE';
 
 const MONTHS = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
 ];
 
 export { 
