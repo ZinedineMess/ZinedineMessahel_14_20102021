@@ -8,7 +8,6 @@ const App = () => {
   return (
     <GlobalState>
       <Router>
-        <div className='router-container'>
           <Nav />
             <Switch>
               {routes.map((route, i) => (
@@ -20,7 +19,6 @@ const App = () => {
                 />
               ))}
             </Switch>
-        </div>
       </Router>
     </GlobalState>
   );
