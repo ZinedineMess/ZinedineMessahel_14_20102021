@@ -1,3 +1,4 @@
+import 'components/DataTable/DataTable.css';
 import DataTables from 'datatables-plugin-react';
 import { dataTableLabels } from 'assets/data/dataTableLabels';
 import EmployeeContext from 'context/context';
