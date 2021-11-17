@@ -1,13 +1,13 @@
 .buttonDefault {
-    background-color: #444;
-    border: none;
-    border-radius: .3125rem;
-    color: #F5F4F2;
-    cursor: pointer;
-    font-size: 1.2rem;
-    height: 3.75rem;
-    transition: .3s;
-    width: 12.5rem;
+    background-color: #444 !important;
+    border: none !important;
+    border-radius: .3125rem !important;
+    color: #F5F4F2 !important;
+    cursor: pointer !important;
+    font-size: 1.2rem !important;
+    height: 3.75rem !important;
+    transition: .3s !important;
+    width: 12.5rem !important;
 }
 
 .buttonDefault:hover {

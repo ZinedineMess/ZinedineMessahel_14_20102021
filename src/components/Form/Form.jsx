@@ -5,12 +5,14 @@ import DropDown from 'components/DropDown/DropDown';
 import EmployeeContext from 'context/context';
 import { INITIAL_STATE_EMPLOYEE } from 'utils/constants';
 import Input from 'components/Input/Input';
+import {Modal, useModal} from 'react-top-modal';
 import React, { useState, useContext } from 'react';
 import { statesOfUSA } from 'assets/data/statesOfUSA';
 
 const Form = () => {
     const [newEmployee, setNewEmployee] = useState(INITIAL_STATE_EMPLOYEE);
     const [errorMessage, setErrorMessage] = useState('');
+    const {isShowing, toggle} = useModal();
     const context = useContext(EmployeeContext);
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -25,6 +27,7 @@ const Form = () => {
             return setErrorMessage('Please fill in all fields');
         }
         setErrorMessage('');
+        toggle();
         context.addEmployeeToList(newEmployee, setErrorMessage);
         setNewEmployee(INITIAL_STATE_EMPLOYEE);
     };
@@ -35,7 +38,7 @@ const Form = () => {
                 <h2>New Employee</h2>
             </article>
             <span className='lineForm'/>
-            <form action='#' id='createEmployee' onSubmit={handleSubmit} className='form'>
+            <form action='#' id='createEmployee' className='form'>
                 <fieldset className='fieldSetEmployee'> 
                     <legend>Employee</legend> 
                     <article className='formGroup'>
@@ -93,7 +96,16 @@ const Form = () => {
                 <div className='fieldSetSumbit'>
                     <article className='formGroup'>
                         <div className='formSubmitDiv'>
-                            <button type='submit' className='buttonDefault'>Save</button>
+                            <button type='submit' className='buttonDefault' onClick={handleSubmit}>Save</button>
+                            <Modal 
+                                isShowing={isShowing} 
+                                hide={toggle} 
+                                addCloseIcon={true}
+                                addCloseOverlay={true}
+                                addCloseEsc={true}
+                            >
+                                <h2>The employee has been registrered</h2>
+                            </Modal>
                         </div>
                     </article>
                 </div>
