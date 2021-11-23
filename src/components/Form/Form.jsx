@@ -5,15 +5,16 @@ import DropDown from 'components/DropDown/DropDown';
 import EmployeeContext from 'context/context';
 import { INITIAL_STATE_EMPLOYEE } from 'utils/constants';
 import Input from 'components/Input/Input';
-import {Modal, useModal} from 'react-top-modal';
 import React, { useState, useContext } from 'react';
 import { statesOfUSA } from 'assets/data/statesOfUSA';
+import {Modal, useModal} from 'react-top-modal';
+import { Link } from 'react-router-dom';
 
 const Form = () => {
     const [newEmployee, setNewEmployee] = useState(INITIAL_STATE_EMPLOYEE);
     const [errorMessage, setErrorMessage] = useState('');
-    const {isShowing, toggle} = useModal();
     const context = useContext(EmployeeContext);
+    const { showModal, activeModal, handleOpenModal, handleCloseModal } = useModal();
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -26,8 +27,8 @@ const Form = () => {
             ) {
             return setErrorMessage('Please fill in all fields');
         }
+        handleOpenModal('submitModal');
         setErrorMessage('');
-        toggle();
         context.addEmployeeToList(newEmployee, setErrorMessage);
         setNewEmployee(INITIAL_STATE_EMPLOYEE);
     };
@@ -96,15 +97,12 @@ const Form = () => {
                 <div className='fieldSetSumbit'>
                     <article className='formGroup'>
                         <div className='formSubmitDiv'>
-                            <button type='submit' className='buttonDefault' onClick={handleSubmit}>Save</button>
-                            <Modal 
-                                isShowing={isShowing} 
-                                hide={toggle} 
-                                addCloseIcon={true}
-                                addCloseOverlay={true}
-                                addCloseEsc={true}
-                            >
-                                <h2>The employee has been registrered</h2>
+                            <button type='button' className='buttonDefault' onClick={handleSubmit}>Save</button>
+                            <Modal isOpen={ showModal && activeModal === 'submitModal' } close={handleCloseModal}>
+                                <h2>The employee has been registered !</h2>
+                                <Link to='/employee-list'>
+                                    <button type='button' className='buttonDefault'>Go to the list</button>
+                                </Link>
                             </Modal>
                         </div>
                     </article>
