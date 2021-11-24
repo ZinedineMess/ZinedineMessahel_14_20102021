@@ -1,5 +1,5 @@
 .line {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: #7F9490;
     height: .125rem;
     margin: auto auto 2rem;
     width: 70%;
@@ -12,19 +12,21 @@
 
 .sideBar.showSideBar {
     align-items: center;
-    background: rgba(0, 0, 0, 0.8);
+    background: #445E51;
+    border-bottom-right-radius: .625rem;
+    border-top-right-radius: .625rem;
     bottom: 0;
-    box-shadow: .3125rem .3125rem .625rem #0000002e;
+    box-shadow: .2125rem .2125rem .625rem #0000002e;
     display: flex;
     flex-direction: column;
-    height: calc(100vh- 5rem - 0rem);
+    height: 100%;
     justify-content: space-evenly;
     left: 0;
     overflow: hidden;
     padding-top: 2rem;
     position: relative;
-    top: 3.4rem;
-    width: 15%;
+    top: 1rem;
+    width: 60%;
     z-index: 4200;
 }
 
@@ -46,7 +48,7 @@
 
 .sideBarInfoUser:hover,
 .sideBarNavLink:hover {
-    background-color: #000;
+    background-color: #7F9490;
     border-radius: .625rem;
 }
 
@@ -69,6 +71,7 @@
 }
 
 .sideBarOverlay.showOverlay {
+    background-color: rgba(0, 0, 0, 0.3);
     height: 100vh;
     left: 0;
     position: fixed;
@@ -92,4 +95,28 @@
     margin-bottom: 2rem;
     opacity: 0.8;
     text-align: center;
+}
+
+@media (min-width: 767px) {
+    .sideBar.showSideBar {
+        width: 50%;
+    }
+}
+
+@media (min-width: 575px) {
+    .sideBar.showSideBar {
+        width: 40%;
+    }
+}
+
+@media (min-width: 991px) {
+    .sideBar.showSideBar {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1199px) {
+    .sideBar.showSideBar {
+        width: 15%;
+    }
 }

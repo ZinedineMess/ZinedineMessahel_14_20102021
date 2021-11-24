@@ -1,4 +1,5 @@
 import DatePicker from 'react-datepicker';
+import 'components/DatePicker/DatePicker.css';
 import { FaRegHandPointDown, FaChevronCircleLeft, FaChevronCircleRight } from 'react-icons/fa';
 import { getMonth, getYear } from 'date-fns';
 import { MONTHS } from 'utils/constants';

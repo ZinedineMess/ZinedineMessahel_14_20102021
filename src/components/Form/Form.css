@@ -1,13 +1,18 @@
+#createEmployee>fieldset.fieldSetDepartment>article>div>div {
+    margin-bottom: .5rem;
+}
+
 .buttonDefault {
-    background-color: #444 !important;
+    background-color: #C49589 !important;
     border: none !important;
     border-radius: .3125rem !important;
     color: #F5F4F2 !important;
     cursor: pointer !important;
-    font-size: 1.2rem !important;
-    height: 3.75rem !important;
+    font-size: .8rem !important;
+    height: 3rem !important;
+    text-align: center;
     transition: .3s !important;
-    width: 12.5rem !important;
+    width: 5rem !important;
 }
 
 .buttonDefault:hover {
@@ -16,66 +21,66 @@
 
 .containerWrapper {
     align-items: center;
+    background-color: #E8E6E1;
+    color: rgba(0, 0, 0, 0.7);
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .custom-select__control {
-    background-color: rgba(0, 0, 0, 0.7) !important;
+    background-color: #D4B89F !important;
     cursor: pointer !important;
     width: 93%;
 }
 
 .custom-select__single-value {
-    color: #F5F4F2 !important;
+    color: #3F4144 !important;
 }
 
 .errorMessage {
     color: red;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
     width: 100%;
 }
 
 .fieldSetAddress {
     border-radius: 1.25rem;
-    grid-area: 3 / 1 / 5 / 4;
+    grid-area: 3 / 1 / 5 / 7;
     margin-bottom: 1rem;
-    width: 100%;
 }
 
 .fieldSetDepartment {
     border-radius: 1.25rem;
-    grid-area: 5 / 1 / 6 / 3;
+    grid-area: 5 / 1 / 6 / 4;
     margin-bottom: 1rem;
     width: 90%;
 }
 
 .fieldSetEmployee {
     border-radius: 1.25rem;
-    grid-area: 1 / 1 / 3 / 4;
+    grid-area: 1 / 1 / 3 / 7;
     margin-bottom: 1rem;
-    width: 100%;
 }
 
 .fieldSetSumbit {
     align-items: center;
     border-radius: 1.25rem;
     display: flex;
-    grid-area: 5 / 3 / 6 / 4;
+    grid-area: 5 / 4 / 6 / 7;
     justify-content: center;
     margin-bottom: 1rem;
-    text-align: center;
-    width: 100%;
 }
 
 .form {
+    align-items: center;
     display: grid;
     grid-column-gap: 0;
     grid-row-gap: 0;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    width: 80%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    width: 100%;
 }
 
 .formGroup {
@@ -87,16 +92,16 @@
 }
 
 .formGroupItems input {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #D4B89F;
+    border-color: rgba(0, 0, 0, 0.7);
     border-radius: .625rem;
     border-style: none;
-    color: #F5F4F2;
+    color: #3F4144;
     font-size: 1rem;
-    height: 2.375rem;
-    margin-right: 1rem;
+    height: 2rem;
     padding: .5rem;
     transition: .3s;
-    width: 90%;
+    width: 80%;
 }
 
 .formHeader {
@@ -104,14 +109,49 @@
 }
 
 .lineForm {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #C49589;
     height: .125rem;
     margin-bottom: 2rem;
     width: 50%;
+}
+
+.modal {
+    width: 70%;
 }
 
 label {
     display: block;
     margin-bottom: 1rem;
     margin-top: 1rem;
+}
+
+legend {
+    font-weight: 700;
+}
+
+@media (min-width: 575px) {
+    .buttonDefault {
+        font-size: 1.2rem !important;
+        height: 3.75rem !important;
+        width: 12.5rem !important;
+    }
+
+    .errorMessage {
+        font-size: 1.2rem;
+    }
+
+    .form {
+        width: 80%;
+    }
+
+    .formGroupItems input {
+        font-size: 1rem;
+        height: 2.375rem;
+        margin-right: 1rem;
+        width: 90%;
+    }
+
+    .modal {
+        max-width: 31rem;
+    }
 }

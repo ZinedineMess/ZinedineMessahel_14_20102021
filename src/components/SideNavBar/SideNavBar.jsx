@@ -1,17 +1,17 @@
 import 'components/SideNavBar/SideNavBar.css';
 import { FaUserPlus, FaUsers } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import logoDark from 'assets/logoDark.png';
+import logoSideNav from 'assets/img/logoSideNav.png';
 import PropTypes from 'prop-types';
 import React from 'react';
-import user from 'assets/user.png';
+import user from 'assets/img/user.png';
 
 const SideNavBar = props => {
     return (
         <div className={`sideBarOverlay ${props.showSideBar ? 'showOverlay' : 'hideOverlay'} `} onClick={props.toggle}>
             <aside className={`sideBar ${props.showSideBar ? 'showSideBar' : 'hideSideBar'} `} onClick={(e) => e.stopPropagation()}>
                 <Link to='/' className='sideBarHeader'>
-                    <img src={logoDark} alt='sideBarLogo' className='sideBarLogo'></img>
+                    <img src={logoSideNav} alt='sideBarLogo' className='sideBarLogo'></img>
                     <h2 className='sideBarTitle'>HR Net</h2>
                     <div className='line'/>
                 </Link>
@@ -20,6 +20,7 @@ const SideNavBar = props => {
                         <img src={user} alt='userProfileImage' className='sideBarUserImg'></img>
                         <Link to='/' className='sideBarUserName'><h3>Clark Kent</h3></Link>
                     </article>
+                    <br/>
                     <ul className='sideBarNav' role='menu'>
                         <li className='sideBarNavItem'>
                             <Link to='./' className='sideBarNavLink'>
@@ -27,6 +28,7 @@ const SideNavBar = props => {
                                 <p>New Employee</p>
                             </Link>
                         </li>
+                        <br/>
                         <div className='line'/>
                         <li className='sideBarNavItem'>
                             <Link to='/employee-list' className='sideBarNavLink'>

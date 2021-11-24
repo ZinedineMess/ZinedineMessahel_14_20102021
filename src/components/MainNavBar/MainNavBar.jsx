@@ -1,7 +1,7 @@
 import 'components/MainNavBar/MainNavBar.css'; 
 import { FaComments, FaCompress, FaBell, FaBars } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import logo from 'assets/logo.png';
+import logoHeader from 'assets/img/logoHeader.png';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -11,7 +11,7 @@ const MainNavBar = props => {
             <nav className='mainNavBar'>
                 <FaBars className='navBarIcon' onClick={props.toggle} />
                 <Link to='/'>
-                    <img src={logo} alt='navBarLogo' className='navBarLogo'></img>
+                    <img src={logoHeader} alt='navBarLogo' className='navBarLogo'></img>
                 </Link>
                 <ul className='navBarRight'>
                     <li className='navBarRightItem'>

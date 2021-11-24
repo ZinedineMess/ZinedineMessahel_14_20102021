@@ -15,6 +15,7 @@ const Form = () => {
     const [errorMessage, setErrorMessage] = useState('');
     const context = useContext(EmployeeContext);
     const { showModal, activeModal, handleOpenModal, handleCloseModal } = useModal();
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -36,12 +37,12 @@ const Form = () => {
     return (
         <section className='containerWrapper'>
             <article className='formHeader'>
-                <h2>New Employee</h2>
+                <h2>NEW EMPLOYEE</h2>
             </article>
             <span className='lineForm'/>
             <form action='#' id='createEmployee' className='form'>
                 <fieldset className='fieldSetEmployee'> 
-                    <legend>Employee</legend> 
+                    <legend>EMPLOYEE</legend> 
                     <article className='formGroup'>
                         <div className='formGroupItems'>
                             <label htmlFor='firstName'>First Name</label>
@@ -64,7 +65,7 @@ const Form = () => {
                     </article>
                 </fieldset>
                 <fieldset className='fieldSetAddress'>
-                    <legend>Address</legend> 
+                    <legend>ADDRESS</legend> 
                     <article className='formGroup'>
                         <div className='formGroupItems'>
                             <label htmlFor='street'>Street</label>
@@ -82,7 +83,7 @@ const Form = () => {
                         </div>
                         <div className='formGroupItems'>
                             <label htmlFor='zip-code'>Zip Code</label>
-                            <Input inputType='text' inputName='zipCode' newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
+                            <Input inputType='number' inputName='zipCode' newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
                         </div>
                     </article>
                 </fieldset>
@@ -98,8 +99,9 @@ const Form = () => {
                     <article className='formGroup'>
                         <div className='formSubmitDiv'>
                             <button type='button' className='buttonDefault' onClick={handleSubmit}>Save</button>
-                            <Modal isOpen={ showModal && activeModal === 'submitModal' } close={handleCloseModal}>
-                                <h2>The employee has been registered !</h2>
+                            <Modal isOpen={ showModal && activeModal === 'submitModal' } close={handleCloseModal} addCloseOverlay={true}>
+                                <br/>
+                                <h3>The employee has been registered !</h3>
                                 <Link to='/employee-list'>
                                     <button type='button' className='buttonDefault'>Go to the list</button>
                                 </Link>

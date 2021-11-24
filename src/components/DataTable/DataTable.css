@@ -5,15 +5,15 @@
 }
 
 .dtb {
-    background-color: #F5F7FA;
-    border: solid .5rem rgba(0, 0, 0, 0.7);
+    background-color: #EDEBE8;
+    border: solid .5rem #D4B89F;
     border-radius: 1.5625rem;
     margin-top: 2rem;
     padding: 1rem;
 }
 
 .dtb select {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #C49589;
     border-radius: .625rem;
     color: #F5F7FA;
     height: 3.125rem;
@@ -27,7 +27,7 @@
 }
 
 .dtb-pagination-btn {
-    background-color: rgba(0, 0, 0, 0.7) !important;
+    background-color: #C49589 !important;
     border-color: #F5F7FA !important;
     border-radius: .3125rem;
     color: #F5F4F2 !important;
@@ -40,7 +40,7 @@
 }
 
 .dtb-search input {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #C49589;
     border-radius: .625rem;
     border-style: none;
     color: #F5F7FA;
@@ -65,9 +65,28 @@
 
 .dtb-table-cell,
 .first-cell {
-    background-color: #F5F7FA !important;
+    background-color: #E8E6E1 !important;
 }
 
 .dtb-table-header-cell {
     text-transform: uppercase;
+}
+
+@media (max-width: 990px) {
+    .dtb {
+        display: flex;
+        flex-direction: column;
+        font-size: .7rem;
+        max-width: inherit;
+        overflow-x: scroll;
+        text-align: center;
+        width: 80% !important;
+    }
+
+    .dtb-entries {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
 }
