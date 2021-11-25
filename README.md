@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+![HRNet](https://res.cloudinary.com/dlpyn3wxf/image/upload/v1637859087/TopModal-3_yr8nxi.png)    
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
+[![Maintainability](https://api.codeclimate.com/v1/badges/6980e008f37cdba73d75/maintainability)](https://codeclimate.com/github/ZinedineMess/ZinedineMessahel_14_20102021/maintainability)
 
-## Available Scripts
+## Prerequisites for install
+- You need [Git](https://git-scm.com) to clone the repository
+- You need [Node](https://nodejs.org/en/) (v16.10.0) to run the npm commands
 
-In the project directory, you can run:
+## Dependencies
+- [React](https://reactjs.org): v17.0.2   
+- [datatables-plugin-react](https://www.npmjs.com/package/datatables-plugin-react): v1.8.1 
+- [date-fns](https://www.npmjs.com/package/date-fns): v2.25.0  
+- [lodash](https://www.npmjs.com/package/lodash): v4.17.21  
+- [moment](https://www.npmjs.com/package/moment): v2.29.1  
+- [prop-types](https://www.npmjs.com/package/prop-types): v15.7.2 
+- [react-datepicker](https://www.npmjs.com/package/react-datepicker): v4.3.0 
+- [react-dom](https://www.npmjs.com/package/react-dom): v17.0.2 
+- [react-icons](https://www.npmjs.com/package/react-icons): v4.3.1   
+- [react-router-dom](https://www.npmjs.com/package/react-router-dom): v5.3.0  
+- [react-scripts](https://www.npmjs.com/package/react-scripts): v4.0.3  
+- [react-select](https://www.npmjs.com/package/react-select): v5.1.0 
+- [react-top-modal](https://www.npmjs.com/package/react-top-modal): v0.1.7  
+- Recommended text editor: [Visual Studio Code](https://code.visualstudio.com)    
 
-### `npm start`
+## Installing and launching Front-End    
+1. Clone the repository of HRNet:   
+`git clone https://github.com/ZinedineMess/ZinedineMessahel_14_20102021.git`    
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2. Inside this front-end repository, install dependencies:   
+`npm install`   
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+3. Launch front-end on port 3000:    
+`npm start`    
 
-### `npm test`
+4. Front-end is now rendered at URL `http://localhost:3000`.    
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Auteur   
+* [Zinédine MESSAHEL](https://github.com/ZinedineMess)   
