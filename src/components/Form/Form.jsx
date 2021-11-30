@@ -82,7 +82,7 @@ const Form = () => {
                             <DropDown inputName='state' options={statesOfUSA} newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
                         </div>
                         <div className='formGroupItems'>
-                            <label htmlFor='zip-code'>Zip Code</label>
+                            <label htmlFor='zipCode'>Zip Code</label>
                             <Input inputType='number' inputName='zipCode' newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
                         </div>
                     </article>
@@ -90,8 +90,8 @@ const Form = () => {
                 <fieldset className='fieldSetDepartment'>
                     <article className='formGroup'>
                         <div className='formGroupItems'>
-                            <label htmlFor='department'>Department</label>
-                            <DropDown inputName='department' options={departments} newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
+                            <label htmlFor='departments'>Department</label>
+                            <DropDown inputName='departments' options={departments} newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
                         </div>
                     </article>
                 </fieldset>
