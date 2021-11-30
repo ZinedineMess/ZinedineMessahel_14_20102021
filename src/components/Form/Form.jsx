@@ -90,8 +90,8 @@ const Form = () => {
                 <fieldset className='fieldSetDepartment'>
                     <article className='formGroup'>
                         <div className='formGroupItems'>
-                            <label htmlFor='departments'>Department</label>
-                            <DropDown inputName='departments' options={departments} newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
+                            <label htmlFor='department'>Department</label>
+                            <DropDown inputName='department' options={departments} newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
                         </div>
                     </article>
                 </fieldset>
