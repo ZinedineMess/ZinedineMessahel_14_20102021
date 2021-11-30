@@ -1,5 +1,5 @@
 .badgeMessNotif {
-    right: 2.5rem;
+    right: 3.3rem;
 }
 
 .badgeMessNotif,
@@ -15,7 +15,7 @@
 }
 
 .badgeNotif {
-    right: 0;
+    right: 0.8rem;
 }
 
 .header {
@@ -64,6 +64,7 @@
     display: flex;
     justify-content: flex-end;
     list-style: none;
+    margin-right: 1rem;
 }
 
 .navBarRightItem {
@@ -73,11 +74,11 @@
 
 @media (min-width: 1199px) {
     .badgeMessNotif {
-        right: 4.5rem;
+        right: 5.2rem;
     }
 
     .badgeNotif {
-        right: 1rem;
+        right: 2rem;
     }
 
     .navBarLogo {

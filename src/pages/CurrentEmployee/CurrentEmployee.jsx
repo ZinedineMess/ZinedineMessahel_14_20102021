@@ -5,7 +5,7 @@ const CurrentEmployee = () => {
     return (
         <section className='containerWrapper'>
             <article className='formHeader'>
-                <h2>CURRENT EMPLOYEE</h2>
+                <h1>CURRENT EMPLOYEE</h1>
             </article>
             <span className='lineForm'/>
             <Table />
