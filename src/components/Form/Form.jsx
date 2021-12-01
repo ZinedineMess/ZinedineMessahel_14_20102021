@@ -37,7 +37,7 @@ const Form = () => {
     return (
         <section className='containerWrapper'>
             <article className='formHeader'>
-                <h2>NEW EMPLOYEE</h2>
+                <h1>NEW EMPLOYEE</h1>
             </article>
             <span className='lineForm'/>
             <form action='#' id='createEmployee' className='form'>
@@ -82,15 +82,16 @@ const Form = () => {
                             <DropDown inputName='state' options={statesOfUSA} newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
                         </div>
                         <div className='formGroupItems'>
-                            <label htmlFor='zip-code'>Zip Code</label>
+                            <label htmlFor='zipCode'>Zip Code</label>
                             <Input inputType='number' inputName='zipCode' newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
                         </div>
                     </article>
                 </fieldset>
                 <fieldset className='fieldSetDepartment'>
+                    <legend>DEPARTMENT</legend> 
                     <article className='formGroup'>
                         <div className='formGroupItems'>
-                            <label htmlFor='department'>Department</label>
+                            <label htmlFor='department'></label>
                             <DropDown inputName='department' options={departments} newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
                         </div>
                     </article>

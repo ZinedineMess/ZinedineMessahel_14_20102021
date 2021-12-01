@@ -5,6 +5,8 @@ import Select, { createFilter } from 'react-select';
 const DropDown = props => {
     return (
         <Select
+            aria-label={props.inputName}
+            aria-haspopup="listbox"
             className='custom-select'
             options={props.options}
             value={{ label: props.newEmployee[props.inputName] }}

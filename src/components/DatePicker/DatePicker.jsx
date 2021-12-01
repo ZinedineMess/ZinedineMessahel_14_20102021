@@ -1,19 +1,19 @@
 import DatePicker from 'react-datepicker';
 import 'components/DatePicker/DatePicker.css';
-import { FaRegHandPointDown, FaChevronCircleLeft, FaChevronCircleRight } from 'react-icons/fa';
 import { getMonth, getYear } from 'date-fns';
 import { MONTHS } from 'utils/constants';
 import PropTypes from 'prop-types';
 import range from 'lodash/range';
-import React, { Fragment } from 'react';
+import React from 'react';
 import 'react-datepicker/dist/react-datepicker.css';
 
 const CreateDatePicker = props => {
     const YEARS = range(1920, getYear(new Date()) + 1, 1);
 
     return (
-        <Fragment>
+        <>
             <DatePicker
+                ariaLabelledBy={props.inputName}
                 renderCustomHeader={({
                     date,
                     changeMonth,
@@ -24,7 +24,7 @@ const CreateDatePicker = props => {
                     nextMonthButtonDisable,
                 }) => (
                 <div className='date-picker__header'>
-                    <button type='button' onClick={decreaseMonth} disabled={prevMonthButtonDisabled}><FaChevronCircleLeft /></button>
+                    <button type='button' onClick={decreaseMonth} disabled={prevMonthButtonDisabled}><i className="fas fa-chevron-left"></i></button>
                     <select
                         value={MONTHS[getMonth(date)]}
                         onChange={({ target: { value } }) => changeMonth(MONTHS.indexOf(value))}>
@@ -43,10 +43,10 @@ const CreateDatePicker = props => {
                             </option>
                         ))};
                     </select>
-                    <button type='button' onClick={increaseMonth} disabled={nextMonthButtonDisable}><FaChevronCircleRight /></button>
+                    <button type='button' onClick={increaseMonth} disabled={nextMonthButtonDisable}><i className="fas fa-chevron-right"></i></button>
                 </div>
             )}
-                todayButton={<FaRegHandPointDown />}
+                todayButton={<i className="fas fa-calendar-day"></i>}
                 useWeekdaysShort={true}
                 showPopperArrow={false}
                 selected={props.newEmployee[props.inputName]}
@@ -57,7 +57,7 @@ const CreateDatePicker = props => {
                     }));
                 }}
             />
-        </Fragment>
+        </>
     );
 };
 

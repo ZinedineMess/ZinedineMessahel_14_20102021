@@ -1,10 +1,9 @@
 import 'components/SideNavBar/SideNavBar.css';
-import { FaUserPlus, FaUsers } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import logoSideNav from 'assets/img/logoSideNav.png';
+import logoSideNav from 'assets/img/logoSideNav.webp';
 import PropTypes from 'prop-types';
 import React from 'react';
-import user from 'assets/img/user.png';
+import user from 'assets/img/user.webp';
 
 const SideNavBar = props => {
     return (
@@ -24,7 +23,7 @@ const SideNavBar = props => {
                     <ul className='sideBarNav' role='menu'>
                         <li className='sideBarNavItem'>
                             <Link to='./' className='sideBarNavLink'>
-                                <FaUserPlus />
+                                <i className="fas fa-user-plus"></i>
                                 <p>New Employee</p>
                             </Link>
                         </li>
@@ -32,7 +31,7 @@ const SideNavBar = props => {
                         <div className='line'/>
                         <li className='sideBarNavItem'>
                             <Link to='/employee-list' className='sideBarNavLink'>
-                                <FaUsers />
+                                <i className="fas fa-users"></i>
                                 <p>Employees List</p>
                             </Link>
                         </li>

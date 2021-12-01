@@ -16,7 +16,6 @@
 - [prop-types](https://www.npmjs.com/package/prop-types): v15.7.2 
 - [react-datepicker](https://www.npmjs.com/package/react-datepicker): v4.3.0 
 - [react-dom](https://www.npmjs.com/package/react-dom): v17.0.2 
-- [react-icons](https://www.npmjs.com/package/react-icons): v4.3.1   
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom): v5.3.0  
 - [react-scripts](https://www.npmjs.com/package/react-scripts): v4.0.3  
 - [react-select](https://www.npmjs.com/package/react-select): v5.1.0 

@@ -8,6 +8,7 @@ const Input = props => {
             id={props.inputName}
             type={props.inputType}
             name={props.inputName}
+            aria-labelledby={props.inputName}
             value={props.newEmployee[props.inputName]}
             onChange={(e) => {
                 props.setNewEmployee((state) => ({

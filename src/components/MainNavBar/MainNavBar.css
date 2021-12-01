@@ -1,12 +1,12 @@
 .badgeMessNotif {
-    right: 4.6875rem;
+    right: 3.3rem;
 }
 
 .badgeMessNotif,
 .badgeNotif {
-    background-color: #dc3545;
+    background-color: #610000;
     border-radius: .3125rem;
-    color: #F5F4F2;
+    color: white;
     font-size: .7rem;
     padding: .125rem .25rem;
     position: absolute;
@@ -15,7 +15,7 @@
 }
 
 .badgeNotif {
-    right: 2.3125rem;
+    right: 0.8rem;
 }
 
 .header {
@@ -64,6 +64,7 @@
     display: flex;
     justify-content: flex-end;
     list-style: none;
+    margin-right: 1rem;
 }
 
 .navBarRightItem {
@@ -73,11 +74,11 @@
 
 @media (min-width: 1199px) {
     .badgeMessNotif {
-        right: 7.5rem;
+        right: 5.2rem;
     }
 
     .badgeNotif {
-        right: 4.0625rem;
+        right: 2rem;
     }
 
     .navBarLogo {

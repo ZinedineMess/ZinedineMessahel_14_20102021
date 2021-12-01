@@ -30,7 +30,7 @@
     background-color: #C49589 !important;
     border-color: #F5F7FA !important;
     border-radius: .3125rem;
-    color: #F5F4F2 !important;
+    color: rgba(0, 0, 0, 0.7) !important;
     margin: 1rem .5rem;
 }
 
