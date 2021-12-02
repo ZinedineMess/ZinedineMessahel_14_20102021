@@ -99,19 +99,19 @@
 
 @media (min-width: 767px) {
     .sideBar.showSideBar {
-        width: 50%;
+        width: 40%;
     }
 }
 
 @media (min-width: 575px) {
     .sideBar.showSideBar {
-        width: 40%;
+        width: 30%;
     }
 }
 
 @media (min-width: 991px) {
     .sideBar.showSideBar {
-        width: 30%;
+        width: 20%;
     }
 }
 

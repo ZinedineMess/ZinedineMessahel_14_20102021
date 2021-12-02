@@ -4,12 +4,18 @@ import EmployeeContext from 'context/context';
 import React, { useReducer } from 'react';
 import PropTypes from 'prop-types';
 
+/**
+ * Create all the parts of the state and methods that will be accessible from any component of the website
+ * @param {object} children 
+ * @return {void}
+ */
 const GlobalState = props => {
     const employee = [];
     const [listState, dispatch] = useReducer(employeeReducer, { employeeList: [] });
 
+    // Distributes the ADD_EMPLOYEE action object
     const addEmployeeToList = employee => {
-        dispatch({ type: ADD_EMPLOYEE, employee: employee });
+        return dispatch({ type: ADD_EMPLOYEE, employee: employee });
     };
 
     return (

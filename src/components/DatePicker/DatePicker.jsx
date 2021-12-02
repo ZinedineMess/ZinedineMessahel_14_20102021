@@ -7,6 +7,13 @@ import range from 'lodash/range';
 import React from 'react';
 import 'react-datepicker/dist/react-datepicker.css';
 
+/**
+ * Date Picker component using data passed as props
+ * @param {object} newEmployee 
+ * @param {string} inputName 
+ * @param {func} setNewEmployee 
+ * @return {DatePicker}
+ */
 const CreateDatePicker = props => {
     const YEARS = range(1920, getYear(new Date()) + 1, 1);
 

@@ -5,6 +5,12 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import user from 'assets/img/user.webp';
 
+/**
+ * React component SideNavBar includes an overlay, the website logo as well as links to the two different pages
+ * @param {bool} showSideBar
+ * @param {func} toggle
+ * @return {void}
+ */
 const SideNavBar = props => {
     return (
         <div className={`sideBarOverlay ${props.showSideBar ? 'showOverlay' : 'hideOverlay'} `} onClick={props.toggle}>

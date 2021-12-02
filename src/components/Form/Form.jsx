@@ -10,12 +10,24 @@ import { statesOfUSA } from 'assets/data/statesOfUSA';
 import {Modal, useModal} from 'react-top-modal';
 import { Link } from 'react-router-dom';
 
+/**
+ * React Form component allowing user to add employee to list, which will be passed to Data-Table using React Context.
+ * If the fields of the table are not correctly filled in an error message will appear.
+ * @return {void}
+ */
 const Form = () => {
     const [newEmployee, setNewEmployee] = useState(INITIAL_STATE_EMPLOYEE);
     const [errorMessage, setErrorMessage] = useState('');
     const context = useContext(EmployeeContext);
     const { showModal, activeModal, handleOpenModal, handleCloseModal } = useModal();
 
+    /**
+     * Function called when submitting the form when clicking on the 'Save' button
+     * If all the fields are filled in correctly, it passes the data to the EmployeeContext.
+     * Otherwise an error message is displayed.
+     * @param {event} e 
+     * @return {void}
+     */
     const handleSubmit = (e) => {
         e.preventDefault();
 
