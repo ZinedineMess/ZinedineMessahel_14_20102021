@@ -2,6 +2,14 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Select, { createFilter } from 'react-select';
 
+/**
+ * DropDown component allowing the user to select one of the options included in the data passed in props
+ * @param {array} options  
+ * @param {object} newEmployee  
+ * @param {string} inputName  
+ * @param {func} setNewEmployee  
+ * @return {Select}
+ */
 const DropDown = props => {
     return (
         <Select

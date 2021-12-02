@@ -1,6 +1,15 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
+/**
+ * React Input component allowing the user to enter text in order to fill out the form.
+ * The value of the input will be added to newEmployee based on its inputName
+ * @param {string} inputName - 
+ * @param {string} inputType - 
+ * @param {object} newEmployee - 
+ * @param {func} setNewEmployee - 
+ * @return {void}
+ */
 const Input = props => {
     return (
         <input
