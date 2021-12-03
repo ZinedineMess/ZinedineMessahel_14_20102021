@@ -3,7 +3,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 [![Maintainability](https://api.codeclimate.com/v1/badges/6980e008f37cdba73d75/maintainability)](https://codeclimate.com/github/ZinedineMess/ZinedineMessahel_14_20102021/maintainability)
     
-## Pass a jQuery library to React : [HRNet Demo](https://amazing-kilby-ef9c72.netlify.app)
+## Pass a jQuery library to React : [HRNet Demo](https://hr-net.netlify.app)
 
 ## Prerequisites for install
 - You need [Git](https://git-scm.com) to clone the repository     
