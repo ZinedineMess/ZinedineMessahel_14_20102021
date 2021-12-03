@@ -112,10 +112,10 @@ const Form = () => {
                     <article className='formGroup'>
                         <div className='formSubmitDiv'>
                             <button type='button' className='buttonDefault' onClick={handleSubmit}>Save</button>
-                            <Modal isOpen={ showModal && activeModal === 'submitModal' } close={handleCloseModal} addCloseOverlay={true}>
+                            <Modal isOpen={ showModal && activeModal === 'submitModal' } close={handleCloseModal}>
                                 <br/>
                                 <h3>The employee has been registered !</h3>
-                                <Link to='/employee-list'>
+                                <Link to='/employee-list' className="buttonLink">
                                     <button type='button' className='buttonDefault'>Go to the list</button>
                                 </Link>
                             </Modal>
