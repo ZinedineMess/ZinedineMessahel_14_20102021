@@ -67,8 +67,8 @@ const Form = () => {
                     </article>
                     <article className='formGroup'>
                         <div className='formGroupItems'>
-                            <label htmlFor='dateOfBirth'>Date of Birth</label>
-                            <CreateDatePicker inputName='dateOfBirth' newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
+                            <label htmlFor='birthdate'>Date of Birth</label>
+                            <CreateDatePicker inputName='birthdate' newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
                         </div>
                         <div className='formGroupItems'>
                             <label htmlFor='startDate'>Start Date</label>
