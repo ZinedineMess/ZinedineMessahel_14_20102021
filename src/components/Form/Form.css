@@ -12,11 +12,15 @@
     height: 3rem !important;
     text-align: center;
     transition: .3s !important;
-    width: 5rem !important;
+    width: 5rem;
 }
 
 .buttonDefault:hover {
     transform: scale(1.09);
+}
+
+.buttonLink {
+    width: 0;
 }
 
 .containerWrapper {
