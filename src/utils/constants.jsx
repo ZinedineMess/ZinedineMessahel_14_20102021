@@ -4,7 +4,7 @@ import { departments } from 'assets/data/departments';
 const INITIAL_STATE_EMPLOYEE = {
     firstName: '',
     lastName: '',
-    dateOfBirth : new Date(),
+    birthdate : new Date(),
     startDate: new Date(),
     street: '',
     city: '',

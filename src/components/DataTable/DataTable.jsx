@@ -15,7 +15,7 @@ const Table = () => {
 
     employees = employees.map((employee) => ({
         ...employee,
-        dateOfBirth: moment(employee.dateOfBirth).format('MM/DD/yyyy'),
+        birthdate: moment(employee.birthdate).format('MM/DD/yyyy'),
         startDate: moment(employee.startDate).format('MM/DD/yyyy')
     }));
 
